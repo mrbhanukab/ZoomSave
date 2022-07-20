@@ -1,3 +1,4 @@
+<link rel="shortcut icon" type="image/x-icon" href="https://raw.githubusercontent.com/mrbhanukab/ZoomSave/main/icon.ico" />
 
 # ZoomSave
 
