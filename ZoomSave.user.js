@@ -25,7 +25,7 @@
             firstMatch.appendChild(zoomSaveDiv);
 
             var zoomH = document.createElement("H1");
-            var h1 = document.createTextNode("ZoomSave V1.0");
+            var h1 = document.createTextNode("ZoomSave V2.0");
             zoomH.appendChild(h1);
             document.getElementById("ZoomSave").appendChild(zoomH);
 
