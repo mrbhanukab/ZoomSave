@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Zoom™ Save
 // @namespace    https://mrbhanukab.github.io/ZoomSave/
-// @version      1.5
+// @version      2.0
 // @description  Download Zoom™ Recordings Quickly 🔥
 // @author       Bhanuka Bandara
 // @homepage     https://mrbhanukab.github.io
@@ -25,7 +25,7 @@
             firstMatch.appendChild(zoomSaveDiv);
 
             var zoomH = document.createElement("H1");
-            var h1 = document.createTextNode("ZoomSave V1.5");
+            var h1 = document.createTextNode("ZoomSave V1.0");
             zoomH.appendChild(h1);
             document.getElementById("ZoomSave").appendChild(zoomH);
 
@@ -95,15 +95,17 @@
             }
             enableContextMenu();
 
-            //Create line Breake
-            var brake = document.createElement('br');
-            document.getElementById("ZoomSaveP").appendChild(brake);
-            document.getElementById("ZoomSaveP").appendChild(brake);
-
             //Create Zoom Paragraph
-            var zoomH2 = document.createElement('h1');
+            var zoomH2 = document.createElement('h2');
             var h2T = document.createTextNode("Absolute mode is enabled. Right-click on the video and click 'Save as' and download the video.");
-            zoomP.appendChild(h2T);
+            zoomH2.appendChild(h2T);
             document.getElementById("ZoomSave").appendChild(zoomH2);
+
+            //Styling ZoomSave div
+            const zoomSaveStyles = `
+   padding: 2rem;
+`;
+            const element = document.querySelector('#ZoomSave');
+            element.style.cssText = zoomSaveStyles;
         }
     }, false)})();
