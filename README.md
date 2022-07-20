@@ -1,5 +1,5 @@
 
-# ![ZoomSave](https://github.com/mrbhanukab/ZoomSave/blob/main/icon.ico) ZoomSave
+# ZoomSave
 
 A simple, [open Source](https://github.com/mrbhanukab/ZoomSave) user-script allows users download Zoom Recordings Quickly.
 
