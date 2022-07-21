@@ -31,3 +31,31 @@ Let's Install ZoomSave. Just **2** steps.
 ## How to Use?
 
 After loading the script, right click on the video, click "Save as" and download the meeting recording.
+
+### Video Walkthrough
+
+![Video Walkthrough, Loding ...](https://github.com/mrbhanukab/ZoomSave/blob/main/assets/download.gif?raw=true)
+
+## FAQ
+
+#### 1. Does this script contain viruses, malware, adware, etc.?
+
+**No**. ZoomSave is an open source user-script. So if you are not sure, you can checkout [source code](https://github.com/mrbhanukab/ZoomSave).
+
+#### 2. Does this script collect personal information such as emails, passwords, browser history?
+
+**No**, this script can only access zoom.us and only execute the code if there are videos
+
+```
+...
+// @match      https://*.zoom.us/*
+...
+
+ window.addEventListener("load", function () {
+ // search for the video element
+ const Vurl = document.getElementById("vjs_video_3_html5_api").src;
+    
+    // if the element exists
+    if (Vurl) {...}
+}
+```
