@@ -4,7 +4,6 @@
 
 A simple, [open Source](https://github.com/mrbhanukab/ZoomSave) user-script allows users download Zoom Recordings Quickly 🔥
 
-
 ## Installation
 
 Let's Install ZoomSave. Just **2** steps.
@@ -22,10 +21,12 @@ Let's Install ZoomSave. Just **2** steps.
 - [Kiwi (android)](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo)
 
 2. Click "Install" button to install "ZoomSave"
+
 - [Install](https://github.com/mrbhanukab/ZoomSave/raw/main/ZoomSave.user.js)
 
 ### Video Walkthrough
-![Video Walkthrough](https://github.com/mrbhanukab/ZoomSave/blob/main/install.gif)
+
+![Video Walkthrough](https://github.com/mrbhanukab/ZoomSave/blob/main/install.gif?raw=true)
 
 ## How to Use?
 

@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Zoom™ Save
 // @namespace    https://mrbhanukab.github.io/ZoomSave/
-// @version      2.0
+// @version      2.1
 // @description  Download Zoom™ Recordings Quickly 🔥
 // @author       Bhanuka Bandara
 // @homepage     https://mrbhanukab.github.io
