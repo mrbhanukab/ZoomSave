@@ -30,4 +30,4 @@ Let's Install ZoomSave. Just **2** steps.
 
 ## How to Use?
 
-After loading the script right click, click "save as" & downlad the meeting recording.
+After loading the script, right click on the video, click "Save as" and download the meeting recording.
