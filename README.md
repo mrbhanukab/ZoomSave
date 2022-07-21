@@ -2,7 +2,7 @@
 
 # ZoomSave
 
-A simple, [open Source](https://github.com/mrbhanukab/ZoomSave) user-script allows users download Zoom Recordings Quickly.
+A simple, [open Source](https://github.com/mrbhanukab/ZoomSave) user-script allows users download Zoom Recordings Quickly 🔥
 
 
 ## Installation
@@ -13,7 +13,7 @@ Let's Install ZoomSave. Just **2** steps.
 
 - [Chrome (pc)](https://chrome.google.com/webstore/detail/dhdgffkkebhmkfjojejmpbldmpobfkfo)
 - [Edge (pc)](https://microsoftedge.microsoft.com/addons/detail/iikmkjmpaadaobahmlepeloendndfphd)
-- [Safari 12+ (MacOS 10.13+)](https://apps.apple.com/app/apple-store/id1482490089?pt=117945903&ct=tm.net&mt=8)
+- [Safari 12+ (MacOS 10.13+)](https://apps.apple.com/app/apple-store/id1482490089?pt=117945903&ct=tm.net&mt=8) ($1.99 🥲)
 - [Safari 6-11 (pc & iOS)](https://safari.tampermonkey.net/tampermonkey.safariextz)
 - [Firefox (mobile & android)](https://addons.mozilla.org/en-US/firefox/addon/tampermonkey/)
 - [Opera (pc)](https://addons.opera.com/extensions/details/tampermonkey-beta/)
