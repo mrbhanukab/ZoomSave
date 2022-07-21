@@ -26,7 +26,7 @@ Let's Install ZoomSave. Just **2** steps.
 
 ### Video Walkthrough
 
-![Video Walkthrough](https://github.com/mrbhanukab/ZoomSave/blob/main/install.gif?raw=true)
+![Video Walkthrough, Loding ...](https://github.com/mrbhanukab/ZoomSave/blob/main/assets/install.gif?raw=true)
 
 ## How to Use?
 

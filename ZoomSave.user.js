@@ -5,7 +5,7 @@
 // @description  Download Zoom™ Recordings Quickly 🔥
 // @author       Bhanuka Bandara
 // @homepage     https://mrbhanukab.github.io
-// @icon         https://github.com/mrbhanukab/ZoomSave/blob/main/logo512.png?raw=true
+// @icon         https://github.com/mrbhanukab/ZoomSave/blob/main/assets/logo512.png?raw=true
 // @supportURL   https://github.com/mrbhanukab/ZoomSave
 // @match      https://*.zoom.us/*
 // ==/UserScript==
