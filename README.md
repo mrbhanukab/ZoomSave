@@ -24,6 +24,9 @@ Let's Install ZoomSave. Just **2** steps.
 2. Click "Install" button to install "ZoomSave"
 - [Install](https://github.com/mrbhanukab/ZoomSave/raw/main/ZoomSave.user.js)
 
+### Video Walkthrough
+![Video Walkthrough](https://github.com/mrbhanukab/ZoomSave/blob/main/install.gif)
+
 ## How to Use?
 
 After loading the script right click, click "save as" & downlad the meeting recording.
