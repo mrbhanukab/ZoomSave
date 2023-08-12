@@ -1,111 +1,63 @@
 // ==UserScript==
-// @name         Zoom™ Save
+// @name         Zoom™ Save 3
 // @namespace    https://mrbhanukab.github.io/ZoomSave/
-// @version      2.1
+// @version      3.0
 // @description  Download Zoom™ Recordings Quickly 🔥
 // @author       Bhanuka Bandara
 // @homepage     https://mrbhanukab.github.io
 // @icon         https://github.com/mrbhanukab/ZoomSave/blob/main/assets/logo512.png?raw=true
 // @supportURL   https://github.com/mrbhanukab/ZoomSave
-// @match      https://*.zoom.us/*
+// @match        https://*.zoom.us/rec*
+// @grant        none
 // ==/UserScript==
 
 (function() {
     'use strict';
-    // when the page has loaded
-    window.addEventListener("load", function () {
-        // search for the video element
-        const Vurl = document.getElementById("vjs_video_3_html5_api").src;
-        // if the element exists
-        if (Vurl) {
-            console.log(Vurl);
-            var firstMatch = document.getElementsByClassName('r-header')[0];
-            var zoomSaveDiv = document.createElement('div');
-            zoomSaveDiv.setAttribute('id', "ZoomSave");
-            firstMatch.appendChild(zoomSaveDiv);
 
-            var zoomH = document.createElement("H1");
-            var h1 = document.createTextNode("ZoomSave V2.0");
-            zoomH.appendChild(h1);
-            document.getElementById("ZoomSave").appendChild(zoomH);
+    // Check if the current URL has "component-page" after "/rec/" and exit if it does
+    if (/\/rec\/component-page/.test(window.location.href)) {
+        return;
+    }
 
-            //Create Zoom Paragraph
-            var zoomP = document.createElement('p');
-            var text = document.createTextNode("Note :- This video is the property of the owner of the video, and the owner reserves the right to take legal action against its unauthorised use, including unauthorised access and distribution. ZoomSave takes no responsibility for such illegal activities");
-            zoomP.setAttribute('id', "ZoomSaveP");
-            zoomP.appendChild(text);
-            document.getElementById("ZoomSave").appendChild(zoomP);
+    console.log("Zoom™ Save userscript is running!");
 
-            //Enable Contex Menu
-            function enableContextMenu(aggressive = true) {
-                void(document.ondragstart=null);
-                void(document.onselectstart=null);
-                void(document.onclick=null);
-                void(document.onmousedown=null);
-                void(document.onmouseup=null);
-                void(document.body.oncontextmenu=null);
-                enableRightClickLight(document);
-                if (aggressive){
-                    enableRightClick(document);
-                    removeContextMenuOnAll('body');
-                    removeContextMenuOnAll('img');
-                    removeContextMenuOnAll('td'); }
-            }
-            function removeContextMenuOnAll(tagName) {
-                var elements = document.getElementsByTagName(tagName);
-                for (var i = 0; i < elements.length; i++) {
-                    enableRightClick(elements[i]);
-                    enablePointerEvents(elements[i]);
-                }
-            }
-            function enableRightClickLight(el) {
-                el || (el = document);
-                el.addEventListener('contextmenu', bringBackDefault, true);
-            }
-            function enableRightClick(el) {
-                el || (el = document);
-                el.addEventListener('contextmenu', bringBackDefault, true);
-                el.addEventListener('dragstart', bringBackDefault, true);
-                el.addEventListener('selectstart', bringBackDefault, true);
-                el.addEventListener('click', bringBackDefault, true);
-                el.addEventListener('mousedown', bringBackDefault, true);
-                el.addEventListener('mouseup', bringBackDefault, true);
-            }
-            function restoreRightClick(el) {
-                el || (el = document); el.removeEventListener('contextmenu', bringBackDefault, true);
-                el.removeEventListener('dragstart', bringBackDefault, true);
-                el.removeEventListener('selectstart', bringBackDefault, true);
-                el.removeEventListener('click', bringBackDefault, true);
-                el.removeEventListener('mousedown', bringBackDefault, true);
-                el.removeEventListener('mouseup', bringBackDefault, true);
-            }
-            function bringBackDefault(event) {
-                event.returnValue = true;
-                (typeof event.stopPropagation === 'function') && event.stopPropagation();
-                (typeof event.cancelBubble === 'function') && event.cancelBubble();
-            }
-            function enablePointerEvents(el) {
-                if (!el) return; el.style.pointerEvents='auto';
-                el.style.webkitTouchCallout='default';
-                el.style.webkitUserSelect='auto';
-                el.style.MozUserSelect='auto';
-                el.style.msUserSelect='auto';
-                el.style.userSelect='auto';
-                enablePointerEvents(el.parentElement);
-            }
-            enableContextMenu();
+    function modifyPage() {
+        let spanElement = document.querySelector('h1[data-v-f8df28cc][data-v-c5781866].r-title span[data-v-f8df28cc].extra');
+        let videoElement = document.getElementById('vjs_video_3_html5_api');
+        let fileNameSpan = document.querySelector('h1[data-v-f8df28cc][data-v-c5781866].r-title span[data-v-f8df28cc].topic');
+        let fileName = fileNameSpan ? fileNameSpan.textContent.trim().replace(/ /g, '_') + '.mp4' : "download.mp4";
 
-            //Create Zoom Paragraph
-            var zoomH2 = document.createElement('h2');
-            var h2T = document.createTextNode("Absolute mode is enabled. Right-click on the video and click 'Save as' and download the video.");
-            zoomH2.appendChild(h2T);
-            document.getElementById("ZoomSave").appendChild(zoomH2);
+        if (spanElement && videoElement) {
+            let src = videoElement.getAttribute('src');
+            if (src) {
+                // Create an anchor (link)
+                let a = document.createElement('a');
+                a.href = src;
+                a.download = fileName;  // Sets the download filename
+                a.textContent = "(Click Here To Download)";
+                a.style.cursor = "pointer";
+                a.style.textDecoration = "underline";
+                a.style.color = "blue";
+                a.style.marginLeft = "10px";  // Add 10 pixels of space to the left of the link
 
-            //Styling ZoomSave div
-            const zoomSaveStyles = `
-   padding: 2rem;
-`;
-            const element = document.querySelector('#ZoomSave');
-            element.style.cssText = zoomSaveStyles;
+                // Replace the span with the anchor element
+                spanElement.parentNode.replaceChild(a, spanElement);
+                return true; // Return true if modification is successful
+            } else {
+                alert("Zoom™ Save Error: Video URL not found!");
+            }
+        } else {
+            console.log("Zoom™ Save userscript couldn't find the required elements!");
+            alert("Zoom™ Save Error: Required elements not found on the page!");
         }
-    }, false)})();
+        return false; // Return false if elements not found or modification unsuccessful
+    }
+
+    // Set a periodic check every 2 seconds (2000 milliseconds)
+    let checkInterval = setInterval(function() {
+        if (modifyPage()) {
+            clearInterval(checkInterval); // Stop the interval once we've successfully modified the page
+        }
+    }, 2000);
+
+})();
