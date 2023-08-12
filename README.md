@@ -4,6 +4,12 @@
 
 A user-friendly, [open Source](https://github.com/mrbhanukab/ZoomSave) user-script that lets users download Zoom Recordings quickly 🔥.
 
+## Important Disclaimer ⚠️
+
+This script only facilitates the downloading process for users who have the necessary permissions to access the recordings. Unauthorized downloading violates terms of service and potentially legal guidelines. Always ensure you have appropriate permissions when using this tool.
+
+**Developer's Note:** The developer of ZoomSave 3 is not responsible for the actions taken by the users. Please use this tool ethically and responsibly.
+
 ## Installation
 
 Installing ZoomSave 3 is a breeze. Just follow these **2** steps:
@@ -35,7 +41,7 @@ After you've got ZoomSave 3 up and running, you'll notice a direct download link
 **Note:** In some cases, depending on the browser and its settings, you might need to right-click the link and select "Save Link As" to download the video.
 
 ### Video Walkthrough
-https://github.com/mrbhanukab/ZoomSave/assets/87383814/2b910b7a-d65c-4bf2-b860-8b42953b734e
+![Video Walkthrough, Loading ...](https://github.com/mrbhanukab/ZoomSave/blob/main/assets/zoom-save-3.gif?raw=true)
 
 ## FAQ
 
