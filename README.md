@@ -1,6 +1,23 @@
 <link rel="shortcut icon" type="image/x-icon" href="https://raw.githubusercontent.com/mrbhanukab/ZoomSave/main/icon.ico" />
 
-# ZoomSave 3 
+# ARCHIVED PROJECT NOTICE 
+
+Hello all,
+
+I've decided to archive this project because it's no longer compatible with the recent updates of Zoom, and I will no longer be maintaining it. If you found this tool useful in the past, I truly appreciate your support! ❤️
+
+For those looking for a useful browser extension, consider checking out the "Absolute Right Click Extension". It's available on multiple browsers:
+
+- [Microsoft Edge](https://microsoftedge.microsoft.com/addons/detail/absolute-enable-right-cli/enkbbdhdmbpfohfkfmdmjkpmolkbelgl)
+- [Chrome](https://chromewebstore.google.com/detail/absolute-enable-right-cli/jdocbkpgdakpekjlhemmfcncgdjeiika)
+- [Firefox](https://addons.mozilla.org/en-US/firefox/addon/absolute-enable-right-click/)
+
+The extension is by the developer "absolute". You can find more about them [here](https://addons.mozilla.org/en-US/firefox/user/13673741/).
+
+Thanks again for your interest and understanding.
+
+
+# ZoomSave 🏳️ 
 
 A user-friendly, [open Source](https://github.com/mrbhanukab/ZoomSave) user-script that lets users download Zoom Recordings quickly 🔥.
 
